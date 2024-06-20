@@ -1,21 +1,357 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Zusammenfassung Modul 293</title>
+	<meta charset="UTF-8">
+	<title>Zusammenfassung Modul 293</title>
+	<style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          color: #333;
+      }
 
+      header {
+          background-color: #4CAF50;
+          padding: 10px 0;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+          max-width: 800px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-around;
+      }
+
+      nav a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 15px;
+          border-radius: 4px;
+          transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+          background-color: #45a049;
+      }
+	</style>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <nav>
-    
-  </nav>
-  <h1>Zusammenfassung Modul 293</h1>
+<header>
+	<nav>
+		<a href="#LU01">Lektion 01 - Struktur</a>
+		<a href="#LU02">Lektion 02 - Vorlage</a>
+		<a href="#LU03">Lektion 03 - Elementen</a>
+		<a href="#LU04">Lektion 04 - Codingstyle</a>
+		<a href="#LU05">Lektion 05 - HTTP und Adressen</a>
+		<a href="#LU06_LU07">Lektion 06/07 - Formularelemente</a>
+		<a href="#LU08">Lektion 08 - Navigation</a>
+	</nav>
+</header>
+<main>
+	<article id="Start"></article>
 
-  <footer>
-    
-  </footer>
+	<h1>Zusammenfassung Modul 293</h1>
+	<article id="LU01">
+		<h2>Lektion 01 - Struktur</h2>
+		<img src="https://wiki.bzz.ch/_media/modul/m293/learningunits/lu02/aufgaben/lu02_bereiche.png?w=400&tok=fd4a07"
+				 alt="Struktur">
+	</article>
+
+	<article id="LU02">
+		<h2>Lektion 02 - Vorlage</h2>
+		<img src="img.png" alt="Vorlage ohne Farbe">
+	</article>
+
+	<article id="LU03">
+		<h2>Lektion 03 - Elementen</h2>
+		<section>
+			<h4>Inline-Elemente</h4>
+			<ul>
+				<li>A-Element</li>
+				<li>Span Element</li>
+				<li>img-Element</li>
+			</ul>
+		</section>
+
+		<section>
+			<h4>Block-Elemente</h4>
+			<ul>
+				<li>h1 bis h6-Element</li>
+				<li>div-Element</li>
+				<li>p-Element</li>
+				<li>table-Element</li>
+			</ul>
+		</section>
+
+		<section>
+			<h4>Tabelle</h4>
+			<table>
+				<tr>
+					<th>Marke</th>
+					<th colspan="2">Modelle</th>
+				</tr>
+				<tr>
+					<td rowspan="2">Ferrari</td>
+					<td>LaFerrari</td>
+					<td>Enzo</td>
+				</tr>
+				<tr>
+					<td>458 Italia</td>
+					<td>488 GTB</td>
+				</tr>
+				<tr>
+					<td>Lamborghini</td>
+					<td colspan="2">Aventador</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Porsche</td>
+					<td>911</td>
+					<td>918 Spyder</td>
+				</tr>
+				<tr>
+					<td>Panamera</td>
+					<td>Cayman</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h4>Selektoren für Elemente</h4>
+			<img src="img_2.png" alt="as">
+			<img src="img_1.png" alt="dksf">
+		</section>
+	</article>
+
+	<article id="LU04">
+		<h2>Lektion 04 - Codingstyle</h2>
+		<p><strong>Infos: </strong>
+			<a href="https://www.wildeisen.ch/rezepte/gefuellte-tomaten-mit-pappardelle-0523">BZZ Lektion 04</a>
+		</p>
+	</article>
+
+	<article id="LU05">
+		<h2>Lektion 05 - HTTP und Adressen</h2>
+		<section>
+			<h4>HTTP</h4>
+			<p>
+				Das <strong>Hypertext Transfer Protocol (kurz HTTP)</strong> wird hauptsächlich eingesetzt, um Webseiten aus dem
+				World Wide Web zu
+				einem Webbrowser zu übertragen. Dabei sendet der Client (Webbrowser) eine Anfrage (engl. Request) an den
+				Webserver, dieser sendet eine Antwort (engl. Response) zurück.
+			</p>
+		</section>
+		<section>
+			<h4>HTTP - Methode</h4>
+			<ul>
+				<li>GET</li>
+				<li>POST</li>
+				<li>PUT</li>
+			</ul>
+			<p><strong>Infos: </strong>
+				<a href="https://moodle.bzz.ch/mod/lesson/view.php?id=14566">BZZ Lektion 05.1</a>
+			</p>
+		</section>
+		<section>
+			<h4>Statuscode</h4>
+			<table>
+				<tr>
+					<th>Status</th>
+					<th>Bedeutung</th>
+					<th>Erklärung</th>
+				</tr>
+				<tr>
+					<td>200</td>
+					<td>OK</td>
+					<td>Die Anfrage wurde erfolgreich verarbeitet.</td>
+				</tr>
+				<tr>
+					<td>302</td>
+					<td>Moved Permanently</td>
+					<td>Die Zieladresse hat sich verändert, in Zukunft die neue Adresse verwenden.</td>
+				</tr>
+				<tr>
+					<td>304</td>
+					<td>Not modified</td>
+					<td>Die Ressource hat sich seit dem letzten Zugriff nicht verändert. Der Client kann die Version aus seinem
+						Cache verwenden.
+					</td>
+				</tr>
+				<tr>
+					<td>404</td>
+					<td>Not found</td>
+					<td>Die gewünschte Ressource wurde nicht gefunden.</td>
+				</tr>
+				<tr>
+					<td>500</td>
+					<td>Internal Server Error</td>
+					<td>Auf dem Server ist ein Fehler aufgetreten.</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h4>Adressen im Web + DNS</h4>
+			<p><strong>Infos: </strong>
+				<a href="https://moodle.bzz.ch/mod/lesson/view.php?id=14566&pageid=3420">BZZ Lektion 05.2</a>
+			</p>
+		</section>
+	</article>
+
+	<article id="LU06_LU07">
+		<h2>Lektion 06/07 - Formularelemente</h2>
+		<section>
+			<p><strong>Einfache Formulare: </strong>
+				<a href="https://moodle.bzz.ch/mod/lesson/view.php?id=14572&pageid=3421&startlastseen=no">BZZ Lektion 06</a>
+			</p>
+			<p><strong>Erweiterte Formulare: </strong>
+				<a href="https://moodle.bzz.ch/mod/lesson/view.php?id=14656&pageid=3465&startlastseen=yes">BZZ Lektion 07</a>
+			</p>
+		</section>
+		<section>
+			<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+				<fieldset>
+					<legend>Reisezeitraum</legend>
+					<label for="startDatum">Anfangsdatum:</label>
+					<input type="date" id="startDatum" name="startDatum" required><br><br>
+					<label for="endDatum">Enddatum:</label>
+					<input type="date" id="endDatum" name="endDatum" required><br><br>
+					<label for="reisedauer">Reisedauer (in Tagen, 1-21):</label>
+					<input type="number" id="reisedauer" name="reisedauer" min="1" max="21" step="1" pattern="\d*" placeholder="1"
+								 required>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Reisende</legend>
+					<label for="reisende">Anzahl:</label>
+					<input type="number" id="reisende" name="reisende" min="1" step="1" pattern="\d*" placeholder="1" required>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Abflughafen</legend>
+					<label>
+						<select name="abflughafen" size="5" required>
+							<optgroup label="Schweiz">
+								<option value="zrh" selected>Zürich (ZRH)</option>
+								<option value="gva">Genf (GVA)</option>
+							</optgroup>
+							<optgroup label="Deutschland">
+								<option value="fra">Frankfurt am Main (FRA)</option>
+								<option value="muc">München (MUC)</option>
+								<option value="ber">Berlin Brandenburg (BER)</option>
+							</optgroup>
+							<optgroup label="Österreich">
+								<option value="vie">Wien (VIE)</option>
+								<option value="szg">Salzburg (SZG)</option>
+							</optgroup>
+							<optgroup label="Italien">
+								<option value="mxp">Mailand Malpensa (MXP)</option>
+								<option value="fco">Rom Fiumicino (FCO)</option>
+							</optgroup>
+							<optgroup label="Frankreich">
+								<option value="cdg">Paris Charles de Gaulle (CDG)</option>
+								<option value="ory">Paris Orly (ORY)</option>
+							</optgroup>
+						</select>
+					</label>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Reiseziel</legend>
+					<label for="reiseziel">Eingabe:</label>
+					<input list="reiseziele" id="reiseziel" name="reiseziel" placeholder="Stadt" required/>
+					<datalist id="reiseziele">
+						<option value="Zürich">
+						<option value="Genf">
+						<option value="Basel">
+						<option value="Bern">
+						<option value="Lugano">
+						<option value="Mailand">
+						<option value="München">
+						<option value="Wien">
+						<option value="Paris">
+						<option value="Rom">
+					</datalist>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Bevorzugte Fluggesellschaft</legend>
+					<label>
+						<select id="fluggesellschaft" name="fluggesellschaft">
+							<option value="lufthansa">Lufthansa</option>
+							<option value="eurowings">Eurowings</option>
+							<option value="austrian">Austrian Airlines</option>
+							<option value="alitalia">Alitalia</option>
+							<option value="airfrance">Air France</option>
+							<option value="easyjet">easyJet Europe</option>
+							<option value="edelweiss">Edelweiss Air</option>
+						</select>
+					</label>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Zusätzliche Dienstleistungen</legend>
+					<input type="checkbox" name="dienstleistungen[]" value="reiseversicherung" id="check1z">
+					<label for="check1z">Reiseversicherung</label><br>
+					<input type="checkbox" name="dienstleistungen[]" value="flughafentransfer" id="check2z">
+					<label for="check2z">Flughafentransfer</label><br>
+					<input type="checkbox" name="dienstleistungen[]" value="zusatzgepaeck" id="check3z">
+					<label for="check3z">Zusatzgepäck</label><br>
+					<input type="checkbox" name="dienstleistungen[]" value="guide" id="check4">
+					<label for="check4">Guide</label><br>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Optionale Dienstleistungen</legend>
+					<input type="checkbox" name="dienstleistungen[]" value="reiseversicherung" id="check1o">
+					<label for="check1o">Priority-Check-In</label><br>
+					<input type="checkbox" name="dienstleistungen[]" value="flughafentransfer" id="check2o">
+					<label for="check2o">zusätzliches Handgepäck</label><br>
+					<input type="checkbox" name="dienstleistungen[]" value="zusatzgepaeck" id="check3o">
+					<label for="check3o">Buchung eines Mietwagens</label><br>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>Unterkunft</legend>
+					<input type="radio" id="hotel" name="unterkunft" value="hotel" required>
+					<label for="hotel"> Hotel</label><br>
+					<input type="radio" id="ferienwohnung" name="unterkunft" value="ferienwohnung">
+					<label for="ferienwohnung"> Ferienwohnung</label><br>
+					<input type="radio" id="hostel" name="unterkunft" value="hostel">
+					<label for="hostel"> Hostel</label><br>
+				</fieldset>
+				<br>
+
+				<fieldset>
+					<legend>E-Mail Adresse</legend>
+					<label for="emailadresse">Eingabe:</label>
+					<input type="email" id="emailadresse" name="email" required>
+				</fieldset>
+
+				<br>
+				<button type="submit">Absenden</button>
+				<button type="reset">Löschen</button>
+			</form>
+		</section>
+	</article>
+
+	<article id="LU08">
+		<h2>Lektion 08 - Navigation</h2>
+		<p><strong>Infos: </strong>
+			<a href="https://moodle.bzz.ch/mod/lesson/view.php?id=14663&pageid=3468">BZZ Lektion 08</a>
+		</p>
+	</article>
+</main>
+<footer>
+		<a href="#Start">Nach Oben</a>
+</footer>
 </body>
 </html>
